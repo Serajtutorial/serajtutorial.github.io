@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Seraj Tutorial – Tech Video Editor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#EEF0F6;--ink:#15163A;--mute:#575a7d;--blue:#2D3BFF;--sun:#FFD84D;--card:#fff;--line:#d5d8e6;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14152B;--ink:#EEF0FA;--mute:#a3a7c8;--blue:#7B86FF;--card:#1F2140;--line:#33365e}}
+:root[data-theme="dark"]{--bg:#14152B;--ink:#EEF0FA;--mute:#a3a7c8;--blue:#7B86FF;--card:#1F2140;--line:#33365e}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Bricolage Grotesque',system-ui,sans-serif;line-height:1.55}
+main{max-width:920px;margin:0 auto;padding:0 20px}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+nav{display:flex;gap:20px;padding:20px 0;font-weight:600}
+nav a{text-decoration:none}nav a:hover{text-decoration:underline}
+h1{font-size:clamp(2.6rem,10vw,5.6rem);line-height:.95;margin:36px 0 16px;font-weight:800;letter-spacing:-.03em}
+.lead{font-size:1.2rem;max-width:34ch;color:var(--mute);margin:0 0 36px}
+.tl{position:relative;background:var(--card);border:1px solid var(--line);border-radius:6px;padding:14px 12px 12px;overflow:hidden;touch-action:none;cursor:ew-resize}
+.tl .row{display:flex;gap:4px;margin-bottom:6px;height:34px}
+.tl .row i{display:block;border-radius:4px;background:var(--blue)}
+.tl .row i.b{background:var(--sun)}.tl .row i.c{background:var(--ink);opacity:.85}.tl .row i.g{background:var(--line)}
+.ph{position:absolute;top:0;bottom:0;width:2px;background:#ff3b5c;left:30%}
+.ph:before{content:"";position:absolute;top:0;left:-6px;border:7px solid transparent;border-top-color:#ff3b5c}
+.tc{font-variant-numeric:tabular-nums;color:var(--mute);font-size:.9rem;margin:8px 0 0}
+section{padding:64px 0 0}
+h2{font-size:2rem;margin:0 0 20px;letter-spacing:-.02em}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
+.w{display:block;text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.w:hover{border-color:var(--blue)}
+.th{aspect-ratio:16/9;display:grid;place-items:center;font-size:2.2rem;color:#fff}
+.w div.t{padding:12px 14px}.w b{display:block}.w span{color:var(--mute);font-size:.92rem}
+.sv{display:grid;gap:12px;padding:0;list-style:none;margin:0}
+.sv li{padding:14px 0;border-bottom:1px solid var(--line)}.sv b{display:block;font-size:1.1rem}.sv span{color:var(--mute)}
+.btn{display:inline-block;background:var(--ink);color:var(--bg);padding:14px 22px;border-radius:6px;font-weight:600;text-decoration:none;margin:8px 10px 0 0}
+.btn.alt{background:none;color:var(--ink);border:2px solid var(--ink)}
+footer{padding:64px 0 40px;color:var(--mute);font-size:.9rem}
+</style>
+</head>
+<body>
+<main>
+<nav><a href="#work">Kaam</a><a href="#services">Services</a><a href="#contact">Contact</a></nav>
+
+<header>
+<h1>Seraj Tutorial,<br>tech video editor.</h1>
+<p class="lead">Tech reviews, unboxing aur tutorial videos ko saaf, tez aur samajhne mein aasan banata hoon.</p>
+<div class="tl" id="tl" aria-hidden="true">
+<div class="row"><i style="flex:3"></i><i class="b" style="flex:2"></i><i style="flex:4"></i><i class="c" style="flex:2"></i><i style="flex:3"></i></div>
+<div class="row"><i class="g" style="flex:2"></i><i class="c" style="flex:4"></i><i class="g" style="flex:1"></i><i class="b" style="flex:3"></i><i class="g" style="flex:4"></i></div>
+<div class="ph" id="ph"></div>
+</div>
+<p class="tc" id="tc">00:00:12:00 – timeline ko khiskao</p>
+</header>
+
+<section id="work">
+<h2>Kaam</h2>
+<div class="grid">
+<a class="w" href="https://youtube.com/@serajpicture98" target="_blank" rel="noopener"><div class="th" style="background:#2D3BFF">▶</div><div class="t"><b>Tech review edit</b><span>Unboxing, B-roll, captions, sound</span></div></a>
+<a class="w" href="https://youtube.com/@serajpicture98" target="_blank" rel="noopener"><div class="th" style="background:#e0457b">▶</div><div class="t"><b>Tech Shorts &amp; Reels</b><span>Quick tips aur news, 30–60 sec</span></div></a>
+<a class="w" href="https://youtube.com/@serajpicture98" target="_blank" rel="noopener"><div class="th" style="background:#15163A">▶</div><div class="t"><b>Tutorial videos</b><span>Screen recording, zoom, step-by-step</span></div></a>
+</div>
+</section>
+
+<section id="services">
+<h2>Services</h2>
+<ul class="sv">
+<li><b>Tech review &amp; unboxing</b><span>Product shots, B-roll, text aur graphics ke saath.</span></li>
+<li><b>Tutorial &amp; screen recording</b><span>Zoom, highlights aur clear voiceover sync.</span></li>
+<li><b>Shorts, Reels &amp; thumbnails</b><span>Tez cuts aur click-worthy thumbnail.</span></li>
+</ul>
+<p class="lead" style="margin-top:20px">Software: CapCut, Lightroom, Alight Motion, After Effects.</p>
+</section>
+
+<section id="contact">
+<h2>Kaam karwana hai?</h2>
+<a class="btn" href="https://wa.me/919835034814">WhatsApp pe message karein</a>
+<a class="btn alt" href="mailto:sa2918637@gmail.com">Email bhejein</a>
+</section>
+
+<footer>© 2026 Seraj Tutorial</footer>
+</main>
+<script>
+(function(){
+var tl=document.getElementById('tl'),ph=document.getElementById('ph'),tc=document.getElementById('tc');
+function move(x){var r=tl.getBoundingClientRect(),p=Math.min(Math.max((x-r.left)/r.width,0),1);
+ph.style.left=(p*100)+'%';var s=Math.round(p*120),m=Math.floor(s/60),ss=s%60;
+tc.textContent='00:0'+m+':'+(ss<10?'0':'')+ss+':00 – timeline ko khiskao'}
+tl.addEventListener('pointermove',function(e){move(e.clientX)});
+tl.addEventListener('pointerdown',function(e){move(e.clientX)});
+})();
+</script>
+</body>
+</html>
